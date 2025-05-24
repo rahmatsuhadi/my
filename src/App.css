@@ -9,14 +9,15 @@
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #ffcd42;
-  --secondary-color: #ffd35c;
-  --bg-primary: #ffffff;
-  --text-color: #222222;
-  --text-color-two: #ffffff;
-  --bg-secondary: #000000;
-  --card-background: #f4f4f4;
-  --bg-secondary-two: #111111;
+ /* Colors - Fresh Green Palette */
+--primary-color: #3A9D23;       /* hijau segar */
+--secondary-color: #6FCF97;     /* hijau muda lembut */
+--bg-primary: #E9F7E7;          /* hijau sangat pucat, hampir putih */
+--text-color: #2E582C;          /* hijau gelap untuk teks */
+--text-color-two: #FFFFFF;      /* putih untuk teks di background gelap */
+--bg-secondary: #1F441A;        /* hijau gelap sebagai latar gelap */
+--card-background: #C1E1C1;     /* hijau muda untuk card background */
+--bg-secondary-two: #4A7C3B;    /* hijau medium untuk latar sekunder */
 
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
@@ -30,18 +31,18 @@
   --width-medium: 1100px;
   --width-large: 1300px;
 }
-
 [data-theme="dark"] {
-  --primary-color: #ffcd42;
-  --secondary-color: #ffd35c;
-  --bg-primary: #000000;
-  --text-color: #ffffff;
-  --text-color-two: #222222;
-  --bg-secondary: #ffffff;
-  --card-background: #111111;
-  --bg-secondary-two: #f4f4f4;
-  --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
+  --primary-color: #a4d65e;           /* hijau cerah */
+  --secondary-color: #8cc63f;         /* hijau sedikit lebih gelap */
+  --bg-primary: #121a0f;              /* hijau sangat gelap hampir hitam */
+  --text-color: #e6f0d4;              /* krem-hijau muda untuk teks */
+  --text-color-two: #9dbb7b;          /* hijau pucat untuk teks sekunder */
+  --bg-secondary: #5f9c3a;            /* hijau gelap untuk background sekunder */
+  --card-background: #243a20;         /* hijau tua untuk card background */
+  --bg-secondary-two: #457a2c;        /* hijau lebih gelap untuk variasi */
+  --shadow: 0 2px 10px rgba(30, 60, 15, 0.7); /* bayangan hijau gelap */
 }
+
 
 html {
   font-size: 100%;

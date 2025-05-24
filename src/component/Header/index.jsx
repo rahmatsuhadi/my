@@ -21,7 +21,7 @@ const menu = [
         label: "CONTACT"
     },
     {
-        href: "#",
+        href: "#blog",
         label: "BLOG"
     }
 
@@ -73,7 +73,10 @@ const Header = () => {
                     {/* <!-- Logo --> */}
                     <h1 id="logo">
                         <a target="" href="#"
-                        ><img src={logoHeader} alt="Your Logo" /></a>
+                        >
+                            <h1 className="">m.mattz_</h1>
+                            {/* <img src={logoHeader} alt="Your Logo" /> */}
+                        </a>
                     </h1>
                     {/* <!-- Navbar links --> */}
                     <ul className={`nav-menu ${menuActive ? "active" : ""}`}>
@@ -83,7 +86,7 @@ const Header = () => {
                         <li>
                             <a
                                 className="nav-link btn btn-primary"
-                                href="/cv.pdf"
+                                href="/my/cv.pdf"
                             >RESUME <i className="fas fa-arrow-right"></i></a>
                         </li>
 
@@ -92,8 +95,12 @@ const Header = () => {
                             <input type="checkbox" id="switch" checked={darkTheme}
                                 onChange={switchTheme} />
                             <label className="toggle-icons" htmlFor="switch">
-                                <img className="moon" src={moon} />
+                                {darkTheme ? 
+                                
                                 <img className="sun" src={sun} />
+                                : 
+                                <img className="moon" src={moon} />
+                            }
                             </label>
                         </div>
                         {/* <!-- Hamburger menu --> */}

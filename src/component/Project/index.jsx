@@ -8,25 +8,25 @@ const projects = [
     title: "Khayangan",
     tech: ['React', 'Next JS', 'Tailwind CSS', 'GraphQL'],
     image: 'project-one.png',
-    description: "Website informasi untuk komunitas, menampilkan jadwal dan artikel spiritual.",
+    description: "Website manage hypervisor Openstack dan VMWARE.",
     role: "Frontend Developer – membuat layout halaman dan integrasi API menggunakan GraphQL."
   },
   {
     title: "Parisada",
     tech: ['React', 'Next JS', 'Tailwind CSS', 'Rest API'],
     image: 'project-two.png',
-    description: "Website organisasi Parisada untuk publikasi berita dan kegiatan umat Hindu.",
-    role: "Frontend Developer – membangun seluruh antarmuka dan pengolahan data dari REST API."
+    description: "Website Meet Converance untuk Meeting Dengan Fitur Chat Dan Share Screen.",
+    role: "Frontend Developer dan Backend – membangun seluruh antarmuka dan membangun sistem agar berjalan dan berintegrasi dengan Frontend"
   },
   {
     title: "Panenin",
     tech: ['React', 'Next JS', 'Tailwind CSS', 'GraphQL'],
     image: 'project-three.png',
     description: "Platform e-commerce hasil pertanian lokal berbasis komunitas.",
-    role: "Frontend Developer – menangani tampilan produk, keranjang, dan halaman transaksi."
+    role: "Frontend Developer – menangani tampilan Dashboard Admin untuk manage produk, dan halaman transaksi."
   },
   {
-    title: "Selon Marketplace",
+    title: "Sellon Marketplace",
     tech: ['React Native', 'GraphQL'],
     image: 'project-four.png',
     description: "Marketplace mobile app untuk produk lokal dan UMKM.",
@@ -36,20 +36,20 @@ const projects = [
     title: "Bda Mencari Bakat – Form Register",
     tech: ['React', 'Next JS', 'Tailwind CSS', 'GraphQL'],
     image: 'project-five.png',
-    description: "Formulir pendaftaran event pencarian bakat skala nasional.",
+    description: "Formulir pendaftaran event pencarian bakat Form Lomba.",
     role: "Frontend Developer – membangun form multi-step dengan validasi dan integrasi GraphQL."
   },
   {
     title: "Taman Budaya Yogyakarta",
     tech: ['Yii 2', 'MySQL', 'Bootstrap'],
     image: 'project-six.png',
-    description: "Situs resmi Taman Budaya Yogyakarta yang menampilkan event dan galeri budaya.",
-    role: "Frontend Developer – bekerja sama dalam pengembangan tampilan berbasis Yii dan Bootstrap."
+    description: "Situs resmi Taman Budaya Yogyakarta yang menampilkan event dan galeri budaya dan juga sistem Booking tempat.",
+    role: "Frontend Developer – mengembagkan fitur Booking Reservasi pada Sistem yang sudah ada berbasis Yii dan Bootstrap."
   },
 ];
 
 const Card = ({ title, tech = [], image, onClick }) => {
-  const background = "/project/" + image;
+  const background = "/my/project/" + image;
   return (
     <div href="" className="card" style={{
       background: `url(${background}) center center/cover`
@@ -121,7 +121,7 @@ const [isClosing, setIsClosing] = useState(false);
             {/* Gambar Hero */}
             <div className="modal-image-wrapper">
               <img
-                src={`/src/assets/project/${selectedProject.image}`}
+                src={`/my/project/${selectedProject.image}`}
                 alt={selectedProject.title}
                 className="modal-image"
               />
