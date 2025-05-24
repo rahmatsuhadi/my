@@ -1,0 +1,82 @@
+.exp-edu-section {
+  padding: 60px 20px;
+  background-color: var(--bg-primary);
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.exp-item,
+.edu-item {
+  margin-bottom: 30px;
+  padding: 20px 25px;
+  border-left: 5px solid var(--primary-color);
+  background: var(--card-background);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.exp-item:hover,
+.edu-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 6px 20px rgba(255, 205, 66, 0.4);
+}
+
+.exp-item h3,
+.edu-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  color: var(--secondary-color);
+}
+
+.exp-company,
+.edu-school {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-color);
+}
+
+.exp-period,
+.edu-period {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.exp-item p,
+.edu-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text-color);
+  user-select: text;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .exp-item,
+  .edu-item {
+    padding: 15px 20px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
