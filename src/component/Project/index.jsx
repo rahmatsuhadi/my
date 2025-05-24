@@ -49,7 +49,7 @@ const projects = [
 ];
 
 const Card = ({ title, tech = [], image, onClick }) => {
-  const background = "/src/assets/project/" + image;
+  const background = "/project/" + image;
   return (
     <div href="" className="card" style={{
       background: `url(${background}) center center/cover`
