@@ -1,4 +1,4 @@
-import me from "../../assets/profile/me.jpg"
+import me from "../../assets/profile/me_no_exif.jpg"
 
 const Hero = () => {
     return (
